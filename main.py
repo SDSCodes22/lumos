@@ -11,10 +11,24 @@ import speech_recognition as sr
 cap = cv2.VideoCapture(0)
 
 
+# Function to encode the image
+def _encode_image(self, image_path):
+    with open(image_path, "rb") as image_file:
+        image_data = image_file.read()
+    encoded_image = base64.b64encode(image_data)
+    return encoded_image.decode("utf-8")
+
+
 def saveImg(frame):
-    if os.path.isfile("frame.jpg"):
-        os.remove("frame.jpg")
+    """
+    Given an OpenCV Image (as an ndarray), it will convert to Base64 and save as a txt
+    """
+    if os.path.isfile("frame.txt"):
+        os.remove("frame.txt")
     cv2.imwrite("frame.jpg", frame)
+    txt = _encode_image("frame.jpg")
+    with open("frame.txt", "w") as file:
+        file.write(txt)
 
 
 # The speech recognition is done in a background thread to keep the main thread free for other tasks
@@ -34,6 +48,7 @@ def callback(recognizer, audio):
         SPEECH = recognizer.recognize_google(audio)
 
         print(f"SPEECH: {SPEECH}")
+        print(f"debug: frame dtype = {FRAME.dtype}")
         saveImg(FRAME)
         # TODO: Send this data to relevant model
 
