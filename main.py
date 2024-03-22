@@ -7,16 +7,14 @@ import cv2
 import numpy as np
 import os
 import speech_recognition as sr
+from models.gpt.gpt_main import GPTInteracter
+from gtts import gTTS
+from playsound import playsound
+import threading
 
 cap = cv2.VideoCapture(0)
-
-
-# Function to encode the image
-def _encode_image(self, image_path):
-    with open(image_path, "rb") as image_file:
-        image_data = image_file.read()
-    encoded_image = base64.b64encode(image_data)
-    return encoded_image.decode("utf-8")
+# Initialize
+gem = GPTInteracter()
 
 
 def saveImg(frame):
@@ -26,9 +24,23 @@ def saveImg(frame):
     if os.path.isfile("frame.txt"):
         os.remove("frame.txt")
     cv2.imwrite("frame.jpg", frame)
-    txt = _encode_image("frame.jpg")
-    with open("frame.txt", "w") as file:
-        file.write(txt)
+
+
+def generate_audio(txt: str) -> None:
+    print("Generating audio...")
+    tts = gTTS(txt)
+    print("Audio generated successfully!")
+    # Prevent override
+    if os.path.isfile("response.mp3"):
+        os.remove("response.mp3")
+    print("Saving audio from gTTS as mp3 file...")
+    tts.save("response.mp3")
+    print("\tDone!\n\nPlaying response to user!")
+    playsound("response.mp3")
+
+
+def play_waiting_sound():
+    playsound("placeholder.mp3")
 
 
 # The speech recognition is done in a background thread to keep the main thread free for other tasks
@@ -50,7 +62,17 @@ def callback(recognizer, audio):
         print(f"SPEECH: {SPEECH}")
         print(f"debug: frame dtype = {FRAME.dtype}")
         saveImg(FRAME)
+        # play a placeholder sound in a seperate thread
+        thread = threading.Thread(target=play_waiting_sound)
+        thread.start()
         # TODO: Send this data to relevant model
+        # ? For now, we're just going to send this to Gemini-1.0-Vision
+        #! Synchronous code
+        print("Sending to Gemini!")
+        constant_starter = "This is pre-generated: You are an assistant who has been specially designed to help those who are either blind or visually blind. You are like a personal assistant whom these people can talk to. The image attached to this prompt is what this blind person is seeing in real time. In your response, do not use phrases like 'image', 'photo' or 'picture' however, assume that the user knows this already and instead use phrases like 'in front of you' or 'next to you'. This is the user prompt and the question you must answer: "
+        txt = gem.get_response((constant_starter + SPEECH))
+        print(f"Received response: {txt}, sending to gTTS and playing audio")
+        generate_audio(txt)
 
     except sr.UnknownValueError:
         print("Google Speech Recognition could not understand audio")
