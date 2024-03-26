@@ -50,26 +50,19 @@ def callback(recognizer, audio):
     try:
         # This is before .recognize_google to minimize delays
         FRAME = cap.read(0)[1]  #! Could be null
-        # for testing purposes, we're just using the default API key
-        # to use another API key, use `r.recognize_google(audio, key="GOOGLE_SPEECH_RECOGNITION_API_KEY")`
-        # instead of `r.recognize_google(audio)`
-        print(
-            "Google Speech Recognition thinks you said "
-            + recognizer.recognize_google(audio)
-        )
+        # play a placeholder sound in a seperate thread
+        thread = threading.Thread(target=play_waiting_sound)
+        thread.start()
         SPEECH = recognizer.recognize_google(audio)
 
         print(f"SPEECH: {SPEECH}")
         print(f"debug: frame dtype = {FRAME.dtype}")
         saveImg(FRAME)
-        # play a placeholder sound in a seperate thread
-        thread = threading.Thread(target=play_waiting_sound)
-        thread.start()
         # TODO: Send this data to relevant model
         # ? For now, we're just going to send this to Gemini-1.0-Vision
         #! Synchronous code
         print("Sending to Gemini!")
-        constant_starter = "This is pre-generated: You are an assistant who has been specially designed to help those who are either blind or visually blind. You are like a personal assistant whom these people can talk to. The image attached to this prompt is what this blind person is seeing in real time. In your response, do not use phrases like 'image', 'photo' or 'picture' however, assume that the user knows this already and instead use phrases like 'in front of you' or 'next to you'. This is the user prompt and the question you must answer: "
+        constant_starter = "This is pre-generated: You are an assistant who has been specially designed to help those who are either blind or visually blind. You are like a personal assistant whom these people can talk to. The image attached to this prompt is what this blind person is seeing in real time. The image is mirrored (left is right and vice-verse) In your response, do not use phrases like 'image', 'photo' or 'picture', however, assume that the user knows this already and instead use phrases like 'in front of you' or 'next to you'. You are like the user's eyes. This is the user prompt and the question you must answer: "
         txt = gem.get_response((constant_starter + SPEECH))
         print(f"Received response: {txt}, sending to gTTS and playing audio")
         generate_audio(txt)
