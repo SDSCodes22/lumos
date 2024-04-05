@@ -5,6 +5,9 @@ import os
 import cv2
 import numpy as np
 import math
+import multiprocessing
+import pandas as pd
+from deepface import DeepFace
 
 
 class FacialRecognition:
@@ -33,15 +36,66 @@ class FacialRecognition:
         """
         pass
 
-    def _classify_faces(self, faces: list) -> list[str]:
+    def _classify_faces(
+        self, faces: list, model_index: int = 0, distance_threshold: float = 0.5
+    ) -> list[str]:
         """
         Given a list of cropped faces (as 3D ndarrays), this will classify them if they have already been
         added to the folder /faces/
 
         If they are not recognised, ??? will be returned
         """
+        db_path = os.path.join(os.dirname(__file__), "faces/")
 
-        pass
+        models = [  # TODO: In the line DeepFace.find, change the model index to choose any model from this list to compare the performance
+            "VGG-Face",
+            "Facenet",
+            "Facenet512",
+            "OpenFace",
+            "DeepFace",
+            "DeepID",
+            "ArcFace",
+            "Dlib",
+            "SFace",
+            "GhostFaceNet",
+        ]
+
+        # Loop through each face
+
+        # Worker function to find the identity of given face
+        def find_face(face):
+            try:
+                df = DeepFace.find(
+                    img_path=face, db_path=db_path, model=models[model_index]
+                )[
+                    0
+                ]  # Index 0 because it'll be a list with many faces
+                # Check if the df is empty, because then that means there was no match
+                if df.empty:
+                    return "???"
+                # Now we should have a df with important columns identity and distance. We need to find the identity with the minimum distance
+                min_distance_row = df[df["distance"] == df["distance"].min()]
+                identity: str = min_distance_row["identity"]
+
+                # If the minimum distance still didn't meet the threshold, it means the person was not identified
+                if min_distance_row["distance"] < distance_threshold:
+                    # Now we have an identity looking like eg. "faces/joe_biden.jpg" so we need to parse it
+                    name = identity.split("/")[1].split(".")[0]
+                    name = name.replace("_", " ")
+
+                    return name
+                else:
+                    return "???"
+            except Exception as e:
+                print(
+                    f"There was an error trying to find the face. Here is the exact error: {e}"
+                )
+                return "???"
+
+        # Now, assign workers to each element in the list
+        with multiprocessing.Pool() as pool:
+            output = pool.map(find_face, faces)
+        return output
 
     def _find_faces_in_frame(self, frame) -> tuple:
         """

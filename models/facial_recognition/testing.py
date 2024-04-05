@@ -94,12 +94,14 @@ print("\t TEST 1: Find Faces in Image")
 print("d: sending...")
 
 img = cv2.imread(img_path)
-images = recogniser._find_faces_in_frame(img)[1]
-
+images = recogniser._find_faces_in_frame(img)
+# Save the first guy
+if not os.path.exists("faces/test_guy.jpg"):
+    cv2.imwrite("faces/test_guy.jpg", images[0][0])
 print("d: done")
 image = mp.Image.create_from_file(img_path)
 image_copy = np.copy(image.numpy_view())
-annotated_image = visualize(image_copy, images)
+annotated_image = visualize(image_copy, images[1])
 rgb_annotated_image = cv2.cvtColor(annotated_image, cv2.COLOR_BGR2RGB)
 cv2.imshow("title", rgb_annotated_image)
 cv2.waitKey()
