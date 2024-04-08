@@ -1,0 +1,839 @@
+,prompt,model
+0,Counted the individuals present?,2
+1,"Who's close by, ready to jump into the discussion?",0
+2,Can you spot anyone you haven't met?,3
+3,Any sightings of Eliana in sight?,1
+4,Are there any unfamiliar faces in sight?,3
+5,Could someone clarify who's here?,0
+6,"Amari nearby, noticed by anyone?",1
+7,Seen how many persons are present?,2
+8,Have you observed Sofia in the area?,1
+9,May I ask who's in our vicinity?,0
+10,"Who's here, ready to engage?",0
+11,Do you have any info on Jade's presence?,1
+12,Who's within our immediate surroundings?,0
+13,Could you estimate the number of individuals present?,2
+14,Noticed the number of persons within reach?,2
+15,Can you identify anyone you haven't met in sight?,3
+16,Have you acquainted yourself with everyone within earshot?,3
+17,Are you able to locate Natalie?,1
+18,Would you happen to know the number of people around?,2
+19,Are you aware of Micah being nearby?,1
+20,Counted the heads within reach?,2
+21,Got a count on the crowd?,2
+22,Any clue on the number of persons?,2
+23,Can you confirm if Aubrey is around?,1
+24,Can you reckon the crowd size?,2
+25,Got an idea on the number of people?,2
+26,Do you recognize all the faces in sight?,3
+27,Noticed the number of people present?,2
+28,Can you confirm if Ryan is within reach?,1
+29,Have you acquainted yourself with everyone nearby?,3
+30,Any sense of the number of persons in the vicinity?,2
+31,Are there many people in the room?,2
+32,Can you guess the number of individuals in the room?,2
+33,Any idea if Melody is around?,1
+34,"Who's here, ready to contribute to the intellectual discourse?",0
+35,"Owen nearby, spotted?",1
+36,Do you spot Melody around?,1
+37,Who's in the mix?,0
+38,Any sense of the headcount present?,2
+39,Who's here with us presently?,0
+40,Could you give me a ballpark figure of the crowd size?,2
+41,Who's in the building?,0
+42,Do you recognize all the faces within earshot?,3
+43,Present in this vicinity?,0
+44,Anyone in proximity?,0
+45,Can you confirm if Jaxon is in sight?,1
+46,Who's on the scene?,0
+47,Have you confirmed if Caleb is within reach?,1
+48,Who's present?,0
+49,Can you spot anyone you haven't met within view?,3
+50,Do you perceive a significant number of people here?,2
+51,Do you know everyone within reach?,3
+52,Occupying this area?,0
+53,"Addison around, recognized?",1
+54,Noticed the number of individuals in the vicinity?,2
+55,Can you spot anyone you haven't met in this crowd?,3
+56,Can you gauge the number of individuals present?,2
+57,Have you estimated the number of individuals?,2
+58,Do you recognize all the faces in this crowd?,3
+59,"Cooper within view, anyone noticed?",1
+60,Can you provide an estimation of the number of people within sight?,2
+61,Any sense of the number of folks present?,2
+62,Do you perceive a considerable number of people around?,2
+63,"Layla nearby, anyone observed?",1
+64,Have you seen Zoey nearby?,1
+65,Seen how many folks are in the area?,2
+66,Any strangers around?,3
+67,"Who's here, squad?",0
+68,Do you know all the people in sight?,3
+69,Got an idea on the crowd size in sight?,2
+70,Any clue on the population present?,2
+71,Have you noticed Xavier in the vicinity?,1
+72,"Who's here, waiting to connect?",0
+73,"Grace nearby, anyone identified?",1
+74,Have you met everyone within shouting distance?,3
+75,Any word on Amir being close?,1
+76,Can you provide an estimation of the people nearby?,2
+77,Would you happen to know the number of people present?,2
+78,Have you seen William in the room?,1
+79,Would you happen to know how many folks are around?,2
+80,Got an approximate count within view?,2
+81,Do you see Autumn close by?,1
+82,Any sign of Beau nearby?,1
+83,Any unfamiliar faces within speaking distance?,3
+84,"Who's in the room, mates?",0
+85,Can you identify anyone you haven't met within earshot?,3
+86,Anyone visible?,0
+87,Can you spot anyone you haven't encountered?,3
+88,Any reports on Lyla's presence?,1
+89,Can you confirm if Asher is hereabouts?,1
+90,Have you seen Benjamin in sight?,1
+91,"Who's present, ready to connect?",0
+92,Who's within talking distance?,0
+93,Any strangers in sight?,3
+94,Are you aware of Henry being present?,1
+95,Seen how many folks are in sight?,2
+96,Do you recognize everyone here?,3
+97,Noteworthy presence?,0
+98,"Who's here, ready for a catch-up?",0
+99,Can you guess the number of individuals in the room?,2
+100,"Who's within earshot, ready to participate?",0
+101,Counted the heads in the vicinity?,2
+102,Got an idea on the crowd size in the area?,2
+103,Can you estimate the number of people nearby?,2
+104,Counted the individuals present?,2
+105,Can you see Victoria around here?,1
+106,Have you met everyone within sight?,3
+107,Who's within our immediate surroundings?,0
+108,Folks nearby?,0
+109,Any sightings of Santiago in view?,1
+110,Can you identify anyone you haven't met before in this gathering?,3
+111,Can you spot Caleb in the vicinity?,1
+112,Do you notice Colton in the vicinity?,1
+113,"Logan in view, recognized?",1
+114,Have you acquainted yourself with everyone around?,3
+115,Any clue on the headcount nearby?,2
+116,Got an idea on the crowd size?,2
+117,"Who's in my zone, up for a laugh?",0
+118,Counted the crowd nearby?,2
+119,"Who's nearby, ready to share their insights?",0
+120,"Who's around, ready for some good vibes?",0
+121,Who's up in here?,0
+122,Who's joining us in this space?,0
+123,Can you identify anyone you haven't met in view?,3
+124,Who's in sight?,0
+125,Can you confirm if Adrian is present?,1
+126,Counted the folks nearby?,2
+127,Do you know all the people hereabouts?,3
+128,Could someone shed light on the individuals nearby?,0
+129,Occupants of this space?,0
+130,Any sense of the number of individuals?,2
+131,Any unfamiliar faces around?,3
+132,Who's in the gang?,0
+133,Noteworthy figures?,0
+134,Have you seen Elias close by?,1
+135,Can you confirm if Kai is in sight?,1
+136,Are you aware of Adalynn being around?,1
+137,Noticed the number of persons?,2
+138,Are there any unknown individuals within hearing distance?,3
+139,Any sense of the number of people in this vicinity?,2
+140,Any clue on the population accounted for?,2
+141,Have you met everyone within earshot?,3
+142,Can you spot Owen nearby?,1
+143,Are there any unfamiliar faces nearby?,3
+144,Do you know if Grace is within reach?,1
+145,"Who's standing by, ready to add to the discussion?",0
+146,"Who's within earshot, ready to share their opinion?",0
+147,Counted the heads accounted for?,2
+148,Can you identify anyone you haven't met nearby?,3
+149,Do you recognize all the faces within reach?,3
+150,Can you tally up the folks?,2
+151,Any sense of the number of people?,2
+152,Could someone provide details about those present?,0
+153,Can you gauge the number of people in this area?,2
+154,Any clue on the population in the vicinity?,2
+155,Do you know all the people within sight?,3
+156,Do you know all the people in this group?,3
+157,Can you spot anyone you haven't met in this gathering?,3
+158,May I inquire about the individuals here?,0
+159,Do you have any idea of the crowd size in this vicinity?,2
+160,"Who's here, pals?",0
+161,Do you have any information on Mason's presence?,1
+162,Any confirmation on Sophie's presence observed?,1
+163,Could someone identify the persons here?,0
+164,"Jeremiah within sight, recognized by anyone?",1
+165,Can you confirm if Wesley is hereabouts?,1
+166,Do you perceive a considerable number of people in this space?,2
+167,Any sightings of Melody noticed?,1
+168,"Who's here, ready to share a joke?",0
+169,Any unfamiliar faces within reach?,3
+170,Who's in the hood?,0
+171,Any idea if Emilia is in view?,1
+172,Do you see Brooklyn in the room?,1
+173,Do you know all the people in view?,3
+174,Can you see Carter around?,1
+175,Are there many people in this spot?,2
+176,"Who's around, ready to contribute to the conversation?",0
+177,Can you gauge the crowd size here?,2
+178,Have you acquainted yourself with everyone in sight?,3
+179,"Who's around, folks?",0
+180,Are there any unknown individuals within speaking distance?,3
+181,"Who's in the room, ready to share their viewpoint?",0
+182,Any clue on the number of people in sight?,2
+183,Do you have an idea of the number of people around?,2
+184,"Hannah nearby, anyone observed?",1
+185,Summer in sight?,1
+186,"Who's nearby, ready to keep me entertained?",0
+187,Noticed the number of humans within view?,2
+188,"Who's in my area, ready for a chat?",0
+189,Are there any unfamiliar faces in this gathering?,3
+190,Have you acquainted yourself with everyone within earshot?,3
+191,Any sightings of Leah nearby?,1
+192,Would you happen to know the approximate number of individuals here?,2
+193,"Who's in the room, ready to offer their perspective?",0
+194,Can you identify unfamiliar faces?,3
+195,Any strangers in this crowd?,3
+196,Are there any unfamiliar faces in the room?,3
+197,Can you confirm if Ruby is present?,1
+198,Have you acquainted yourself with everyone within hearing distance?,3
+199,Can you give me a rough count of the people present?,2
+200,Do you have a sense of how many people are nearby?,2
+201,Have you observed Elliana nearby?,1
+202,Have you acquainted yourself with everyone within reach?,3
+203,Any sightings of Luke recognized?,1
+204,"Who's in the room, ready to participate in the discussion?",0
+205,Can you spot anyone you haven't met within conversational distance?,3
+206,Can you gauge the crowd size in this space?,2
+207,Are there any unfamiliar faces around?,3
+208,Have you spotted Parker in sight?,1
+209,Can you identify any newcomers?,3
+210,Can you estimate the number of individuals in the room?,2
+211,Seen how many individuals are in the vicinity?,2
+212,Noticed the number of persons present?,2
+213,Any unfamiliar faces in this crowd?,3
+214,Who's in the posse?,0
+215,Have you acquainted yourself with everyone here?,3
+216,Have you spotted Lily nearby?,1
+217,Any confirmation on Elizabeth's presence close?,1
+218,Can you spot anyone you haven't met within earshot?,3
+219,Have you met everyone within view?,3
+220,Do you recognize everyone in this area?,3
+221,"Who's in the vicinity, mate?",0
+222,Any clue on the population in sight?,2
+223,Have you caught sight of Daniel nearby?,1
+224,Who's here with us presently?,0
+225,"Who's here, team?",0
+226,Have you acquainted yourself with everyone in this gathering?,3
+227,"Who's here, ready for a yarn?",0
+228,Can you see Isabella?,1
+229,Who's with me?,0
+230,Seen how many humans are within reach?,2
+231,Are there any unknown individuals in this crowd?,3
+232,Who's in the room?,0
+233,Any sense of the crowd size in the room?,2
+234,Have you noticed Lucas in the vicinity?,1
+235,Who's here for a good old natter?,0
+236,Any clue on the population nearby?,2
+237,Would you happen to know the number of people within reach?,2
+238,Any sightings of Adeline close by?,1
+239,Have you acquainted yourself with everyone within view?,3
+240,"Who's here, ready to engage in some friendly debate?",0
+241,Would you happen to know the number of individuals in the vicinity?,2
+242,"Jaxon within sight, noticed?",1
+243,Do you recognize all the faces around?,3
+244,Any sense of the number of individuals accounted for?,2
+245,Can you estimate the number of individuals within sight?,2
+246,Do you recognize all the faces nearby?,3
+247,Have you estimated the number of humans?,2
+248,Are you aware of Chloe being nearby?,1
+249,"Who's in my bubble, ready to talk?",0
+250,Do you have any idea of the crowd size nearby?,2
+251,Can you spot anyone you haven't met within hearing distance?,3
+252,Who's on deck?,0
+253,Would you happen to know how many people are within sight?,2
+254,"Who's here, keeping me company?",0
+255,May I ask who's gathered here?,0
+256,Seen how many individuals are around?,2
+257,Any sense of the crowd size in this vicinity?,2
+258,"Kai in sight, recognized?",1
+259,"Who's standing by, ready to add their two cents?",0
+260,"Who's around, ready to engage in conversation?",0
+261,Noticed the number of persons accounted for?,2
+262,Can someone assist in identifying those here?,0
+263,Any unfamiliar faces in this gathering?,3
+264,Can you locate Aaron?,1
+265,Are there any unknown individuals hereabouts?,3
+266,Could you estimate the number of people in this area?,2
+267,"Who's in the room, ready to offer their insights?",0
+268,Anyone present?,0
+269,"Dominic within sight, anyone recognized?",1
+270,"Who's standing by, ready for some banter?",0
+271,Can you count the folks here?,2
+272,Who's sharing this environment with us?,0
+273,Can someone describe the individuals present?,0
+274,Who's rolling deep?,0
+275,"Who's standing by, ready to share their expertise?",0
+276,Can you gauge the number of individuals nearby?,2
+277,Noticed the number of individuals within view?,2
+278,Are there any unfamiliar faces in view?,3
+279,Can you confirm if Clara is within reach?,1
+280,Who's within earshot?,0
+281,Got an idea on the headcount accounted for?,2
+282,"Who's here, ready to offer their perspective?",0
+283,Who's around?,0
+284,Who's nearby?,0
+285,"Who's nearby, ready to partake in the conversation?",0
+286,"Who's in my space, ready to participate in the conversation?",0
+287,Any strangers within shouting distance?,3
+288,Have you noticed Isla hereabouts?,1
+289,"Who's in front of me, buddy?",0
+290,Noticed the number of humans nearby?,2
+291,Can you provide an estimation of the people around?,2
+292,Can you identify any newcomers around?,3
+293,Any unfamiliar faces hereabouts?,3
+294,Have you seen Savannah around here?,1
+295,Do you recognize all the faces within hearing distance?,3
+296,Have you seen Ezra nearby?,1
+297,Who's within proximity to us?,0
+298,Do you recognize all the faces hereabouts?,3
+299,Any sense of the number of people within reach?,2
+300,Any sense of the number of people in the vicinity?,2
+301,Do you spot Muhammad nearby?,1
+302,Who's present?,0
+303,Do you perceive a lot of people in this space?,2
+304,Can you confirm if Cooper is within sight?,1
+305,Do you know all the people within conversational distance?,3
+306,Can you spot Alexander in the vicinity?,1
+307,Who's in the area?,0
+308,"Kai within view, anyone?",1
+309,Any acknowledgment of Brooks nearby?,1
+310,Can you figure out the number of humans?,2
+311,Can you gauge the number of individuals present?,2
+312,Noticed the number of people nearby?,2
+313,Have you met everyone within conversational distance?,3
+314,"Who's nearby, ready for some chatter?",0
+315,Who's currently in our vicinity?,0
+316,Got an approximate count in the vicinity?,2
+317,Can you figure out how many people are here?,2
+318,Do you have any idea of the crowd size present?,2
+319,Have you seen Elizabeth in the room?,1
+320,Any word on Matthew being observed?,1
+321,Do you spot Aubrey in the room?,1
+322,"Who's standing by, eager to talk?",0
+323,Any reports on Greyson's presence recognized?,1
+324,"Who's in the room, ready to socialize?",0
+325,Who's holding it down?,0
+326,Counted the heads in sight?,2
+327,Do you have an approximate count of the people nearby?,2
+328,Can you identify anyone you haven't met hereabouts?,3
+329,Can you provide an estimation of the number of people nearby?,2
+330,Counted the individuals around?,2
+331,Would you happen to know the approximate headcount here?,2
+332,Are there any unknown individuals within conversational distance?,3
+333,Are there any unfamiliar faces within earshot?,3
+334,Have you noticed Owen in sight?,1
+335,Who's sharing this space with us?,0
+336,Seen how many folks are within view?,2
+337,"Adam nearby, anyone noticed?",1
+338,Any sense of the number of persons within view?,2
+339,Got an idea on the crowd size in the vicinity?,2
+340,Do you know everyone present?,3
+341,"Brooks in sight, spotted?",1
+342,Do you recognize all the faces around?,3
+343,Can you spot anyone you haven't met around?,3
+344,Have you observed Willow within reach?,1
+345,Can someone provide details about those present?,0
+346,Are there any unknown individuals nearby?,3
+347,Are there any unknown individuals in view?,3
+348,Who's in my space?,0
+349,Have you met all the people present?,3
+350,"Who's around, ready to join in on the banter?",0
+351,Can you spot anyone you haven't met within reach?,3
+352,Any idea if Isaiah is visible?,1
+353,Can you provide an estimation of the people present?,2
+354,"Who's around, ready to join the discussion?",0
+355,Are there many people within sight?,2
+356,"Who's here, ready for a bit of light-hearted banter?",0
+357,Any word on Roman being close by?,1
+358,Can you confirm if Zion is nearby?,1
+359,Have you been aware of Cooper being present?,1
+360,"Who's nearby, ready to chat?",0
+361,"Amara in view, anyone noticed?",1
+362,Seen how many humans are present?,2
+363,Got an idea on the headcount?,2
+364,Who's here with us currently?,0
+365,Do you recognize everyone within earshot?,3
+366,Any sense of the number of individuals within reach?,2
+367,Have you seen Julian in sight?,1
+368,Any clue on the number of people present?,2
+369,Can you roughly count the individuals around?,2
+370,"Anthony nearby, identified by anyone?",1
+371,Do you know all the people in this vicinity?,3
+372,Recognized companions?,0
+373,"Hudson in view, anyone recognized?",1
+374,May I ask who's in attendance?,0
+375,Can anyone offer insight into the individuals nearby?,0
+376,"Leilani within view, observed?",1
+377,Who's within our sphere at this time?,0
+378,Counted the heads in the area?,2
+379,Any idea if Atlas is in view?,1
+380,Can you identify anyone you haven't met within shouting distance?,3
+381,Noticed the number of individuals within reach?,2
+382,Who's keeping me company right now?,0
+383,Is Melody here?,1
+384,"Who's around, ready to offer their wisdom?",0
+385,"Willow in view, noticed by anyone?",1
+386,Do you know all the people within shouting distance?,3
+387,Can someone provide information about those present?,0
+388,May I ask who's in the vicinity?,0
+389,Seen the number of individuals?,2
+390,"Nolan within sight, noticed by anyone?",1
+391,Do you recognize all the faces in view?,3
+392,Can you observe Waylon in the area?,1
+393,Any clue on the population within reach?,2
+394,Are you aware of Isaac being nearby?,1
+395,Can you tell me the headcount here?,2
+396,"Who's here, in my immediate space?",0
+397,Any sense of the number of individuals in this area?,2
+398,Who's hanging around here?,0
+399,Do you know all the people nearby?,3
+400,Any confirmation on Austin's presence?,1
+401,Who's in the zone?,0
+402,Can you give me a ballpark figure of the number of people nearby?,2
+403,Do you know all the people within shouting distance?,3
+404,Can you spot anyone you're not familiar with?,3
+405,Have you acquainted yourself with everyone hereabouts?,3
+406,"Who's present, mate?",0
+407,Have you spotted Kayden in the room?,1
+408,Do you see Eliana in the room?,1
+409,Noticed the number of individuals in sight?,2
+410,"Who's in my circle, buddy?",0
+411,Notable presence?,0
+412,Anyone in sight?,0
+413,Any strangers nearby?,3
+414,Any sense of the number of individuals in the room?,2
+415,Do you have any idea of the number of people nearby?,2
+416,Have you met everyone nearby?,3
+417,Any clue on the crowd size present?,2
+418,"Who's in the room, ready for some friendly chat?",0
+419,Who's accompanying us in this environment?,0
+420,Can you identify anyone you haven't met within reach?,3
+421,Are there any unfamiliar faces within reach?,3
+422,Have you met everyone hereabouts?,3
+423,Would you happen to know the approximate number of individuals here?,2
+424,Can you identify anyone you haven't met within hearing distance?,3
+425,Do you notice Theodore nearby?,1
+426,Do you know all the people within earshot?,3
+427,Are there many peeps around?,2
+428,Have you seen Christopher in the room?,1
+429,Any sightings of Eleanor close by?,1
+430,Who's hanging out?,0
+431,"Who's here, ready to engage in some intellectual discourse?",0
+432,Any unfamiliar faces in sight?,3
+433,"Maverick within sight, anyone seen?",1
+434,Noticed the number of people accounted for?,2
+435,Have you seen Isla in the room?,1
+436,Are there any unfamiliar faces in this area?,3
+437,Any sightings of Avery around?,1
+438,Are there any unfamiliar faces within hearing distance?,3
+439,Are you able to locate Scarlett nearby?,1
+440,"Mila within view, anyone seen?",1
+441,"Serenity within view, anyone observed?",1
+442,Have you located Savannah?,1
+443,Who's joining us in this space?,0
+444,Have you noticed Amara nearby?,1
+445,Are there any unfamiliar faces within earshot?,3
+446,Have you met everyone in this gathering?,3
+447,Seen how many individuals are in sight?,2
+448,Who's within our immediate vicinity?,0
+449,"Who's around, ready to join the conversation?",0
+450,Any unfamiliar faces around here?,3
+451,Could someone describe who's here?,0
+452,Have you acquainted yourself with everyone in this crowd?,3
+453,Would you happen to know the approximate number of individuals here?,2
+454,Do you know all the people around?,3
+455,Any sense of the number of people in this area?,2
+456,Are there any unfamiliar faces hereabouts?,3
+457,Who's within arm's reach?,0
+458,Can you identify anyone you haven't met within view?,3
+459,Are there any unknown individuals in sight?,3
+460,Can you see Aiden in the area?,1
+461,"Who's here, ready to contribute to the dialogue?",0
+462,Any strangers in this gathering?,3
+463,"Henry in view, recognized by anyone?",1
+464,Noticed the number of folks accounted for?,2
+465,"Zion in view, observed?",1
+466,Noticed how many people are present?,2
+467,Got an idea on the crowd size present?,2
+468,Can you estimate the number of people in the room?,2
+469,Have you acquainted yourself with everyone close by?,3
+470,Any idea if Hannah is spotted?,1
+471,"Ezekiel nearby, anyone seen?",1
+472,Have you met everyone in view?,3
+473,May I ask who's in our vicinity?,0
+474,Are there any unknown individuals nearby?,3
+475,Any sense of the number of individuals nearby?,2
+476,Who's in the house?,0
+477,Have you observed Myles within reach?,1
+478,Do you have any idea of the crowd size present?,2
+479,Can you identify anyone you haven't met around?,3
+480,"Who's around, ready to share stories?",0
+481,Any unfamiliar faces within sight?,3
+482,Have you estimated the headcount?,2
+483,"Who's here, pals?",0
+484,"Who's here, ready to express their point of view?",0
+485,"Who's here, open for a chat?",0
+486,Anyone here?,0
+487,Got an approximate count within reach?,2
+488,Have you met everyone within shouting distance?,3
+489,Got an approximate count accounted for?,2
+490,Who's occupying the space around us?,0
+491,Are you able to identify Oliver nearby?,1
+492,Have you acquainted yourself with everyone nearby?,3
+493,Seen how many individuals are within view?,2
+494,Have you observed Ezekiel in the room?,1
+495,Anybody unfamiliar in sight?,3
+496,Any confirmation on David's whereabouts spotted?,1
+497,Any strangers within earshot?,3
+498,Any sense of the crowd size nearby?,2
+499,"Who's nearby, ready to share their knowledge?",0
+500,Who's here alongside us?,0
+501,"Amari nearby, perhaps?",1
+502,Any sense of the number of persons in sight?,2
+503,Are there any unfamiliar faces within sight?,3
+504,Have you noticed Avery nearby?,1
+505,Got an idea on the crowd size within reach?,2
+506,"Zion within sight, identified?",1
+507,Any confirmation on Paisley being within sight?,1
+508,Have you noticed Naomi nearby?,1
+509,Got an approximate count in sight?,2
+510,"Who's here, ready to share some laughs?",0
+511,Do you recognize all the faces in this gathering?,3
+512,"Eliana nearby, anyone spotted?",1
+513,"Who's around, ready to join the debate?",0
+514,"Who's here, buddies?",0
+515,Can you identify anyone you haven't met before?,3
+516,Who's sharing this moment?,0
+517,Can you identify any newcomers nearby?,3
+518,Are there any unknown individuals within reach?,3
+519,Any reports on Samuel's presence?,1
+520,Any strangers within view?,3
+521,Anyone around?,0
+522,"Mason nearby, anyone recognized?",1
+523,May I inquire about the individuals in this vicinity?,0
+524,Seen how many folks are accounted for?,2
+525,"Who's here, ready to join in on the conversation?",0
+526,"Who's in my space, ready to share their perspective?",0
+527,Can you give me a rough count of the individuals around?,2
+528,Counted the heads within view?,2
+529,Any unfamiliar faces within view?,3
+530,Any word on Madelyn being visible?,1
+531,"Who's in the room, ready to engage?",0
+532,Can you roughly count the individuals here?,2
+533,Do you recognize all the faces within view?,3
+534,"Lyla nearby, seen anyone?",1
+535,Do you spot Elizabeth nearby?,1
+536,"Who's here, within my grasp?",0
+537,Who's in our company right now?,0
+538,"Who's in my vicinity, ready to voice their viewpoint?",0
+539,Have you met everyone in this room?,3
+540,May I inquire about those in attendance?,0
+541,Can you guess the number of people nearby?,2
+542,Are there many people in this area?,2
+543,Can you identify anyone you haven't met within earshot?,3
+544,"Who's here, lending an ear?",0
+545,Seen how many folks are in the vicinity?,2
+546,Have you estimated the number of individuals?,2
+547,Any strangers within speaking distance?,3
+548,Can you roughly estimate the number of individuals here?,2
+549,Any confirmation on Elena's whereabouts nearby?,1
+550,Who's here with us at this moment?,0
+551,Are there any unknown individuals within shouting distance?,3
+552,"Muhammad close by, noticed?",1
+553,Any confirmation on Carter's presence in sight?,1
+554,Are there any unknown individuals in sight?,3
+555,Fellow occupants?,0
+556,"Brooklyn within sight, recognized by anyone?",1
+557,Are there any unknown individuals around?,3
+558,Can you guess how many people are in the area?,2
+559,Any confirmation on Emery's presence visible?,1
+560,Have you met everyone within view?,3
+561,"Caleb within view, spotted by anyone?",1
+562,Can you gauge the crowd size nearby?,2
+563,Do you spot Gianna close by?,1
+564,Are there any unknown individuals within sight?,3
+565,Who's here with us right now?,0
+566,Can you spot anyone you haven't met yet?,3
+567,"Kai nearby, anyone spotted?",1
+568,Do you have any sense of the crowd size nearby?,2
+569,Have you met everyone within reach?,3
+570,Any strangers in view?,3
+571,Have you met everyone within speaking distance?,3
+572,Any strangers nearby?,3
+573,Can you guess the number of individuals here?,2
+574,Can you spot anyone you haven't met hereabouts?,3
+575,Individuals in this area?,0
+576,"Austin within sight, anyone recognized?",1
+577,Seen how many people are nearby?,2
+578,Have you seen Daniel around?,1
+579,Are you aware of Daniel being present?,1
+580,Do you know all the people within speaking distance?,3
+581,Any confirmation on Lyla's whereabouts?,1
+582,Do you know all the people in this room?,3
+583,Are there any unfamiliar faces within reach?,3
+584,Do you know if Penelope is within sight?,1
+585,"Who's in my vicinity, ready for some lively discussion?",0
+586,Who's here with us right now?,0
+587,Do you perceive a significant number of people nearby?,2
+588,"Grayson in view, anyone noticed?",1
+589,Any strangers within reach?,3
+590,Have you met everyone in sight?,3
+591,"Who's here, homies?",0
+592,Do you see Emma close by?,1
+593,Can you provide an estimation of the people within reach?,2
+594,Can you estimate the number of individuals in this vicinity?,2
+595,"Evelyn within sight, anyone spotted?",1
+596,Any strangers within sight?,3
+597,Can you confirm if Logan is within sight?,1
+598,Could someone clarify the individuals present?,0
+599,"Who's here, ready to participate in the exchange of ideas?",0
+600,Can you guess the number of individuals within sight?,2
+601,Would you happen to know how many people are present?,2
+602,Any unfamiliar faces in view?,3
+603,Are there any unknown individuals within view?,3
+604,Have you counted the heads?,2
+605,Would you happen to know the number of people present?,2
+606,Do you perceive a significant number of people in sight?,2
+607,"Who's here, folks?",0
+608,Would you happen to know the number of people in sight?,2
+609,Have you caught sight of Kayden nearby?,1
+610,Any unfamiliar faces within hearing distance?,3
+611,Seen how many people are present?,2
+612,Got an idea on the headcount within view?,2
+613,Any strangers around?,3
+614,"Who's in my midst, ready to chat?",0
+615,Any strangers hereabouts?,3
+616,"Who's standing by, buddy?",0
+617,Can you spot anyone you haven't met in view?,3
+618,Identified here?,0
+619,Have you met everyone around?,3
+620,Any strangers in the vicinity?,3
+621,May I ask who's occupying the space around us?,0
+622,Noticed the number of humans around?,2
+623,Have you seen Avery close by?,1
+624,Do you see any sign of Liam?,1
+625,Seen how many folks are nearby?,2
+626,Any strangers within hearing distance?,3
+627,Any word on Wesley being around?,1
+628,Any sense of the number of people accounted for?,2
+629,Who's present in this space?,0
+630,Have you acquainted yourself with everyone in view?,3
+631,Can you identify anyone you haven't met before in this crowd?,3
+632,Can someone elucidate the individuals present?,0
+633,Have you caught sight of Weston recently?,1
+634,"Kai within sight, visible?",1
+635,Do you recognize everyone nearby?,3
+636,Have you met everyone within hearing distance?,3
+637,Noticed the number of individuals present?,2
+638,Can someone assist in identifying those here?,0
+639,Have you acquainted yourself with everyone within sight?,3
+640,Have you estimated the number of people?,2
+641,Have you noticed Wyatt nearby?,1
+642,"Who's here, ready to lend their expertise?",0
+643,"Oliver in view, anyone observed?",1
+644,Counted the humans nearby?,2
+645,"David within sight, anyone spotted?",1
+646,"Who's here, ready to offer their input?",0
+647,Do you have eyes on Amari?,1
+648,Have you met all the folks here?,3
+649,Have you acquainted yourself with everyone within speaking distance?,3
+650,Any word on Ryan being seen?,1
+651,Any unfamiliar faces within earshot?,3
+652,"Sebastian nearby, anyone seen?",1
+653,Do you know all the people within reach?,3
+654,Got an idea on the number of persons nearby?,2
+655,Seen how many individuals are present?,2
+656,Do you see Leah nearby?,1
+657,Any idea how many folks are within reach?,2
+658,Can you confirm if Melody is in sight?,1
+659,Counted the folks present?,2
+660,Any unfamiliar faces nearby?,3
+661,Have you seen Abigail in the vicinity?,1
+662,"Mila within sight, anyone identified?",1
+663,Can you give me a rough count of the people nearby?,2
+664,Have you acquainted yourself with everyone within shouting distance?,3
+665,Seen how many humans are accounted for?,2
+666,Sharing this space?,0
+667,Any sightings of Luke close?,1
+668,Do you perceive a considerable number of people here?,2
+669,Do you know if Adalynn is around?,1
+670,"Mila nearby, recognized by anyone?",1
+671,Who's sharing this environment with us?,0
+672,Any strangers in shouting distance?,3
+673,Can you roughly calculate the number of people present?,2
+674,Can you estimate the number of people around?,2
+675,Are there any unfamiliar faces in this crowd?,3
+676,Do you see Scarlett close by?,1
+677,Can you provide an estimation of the number of people in the room?,2
+678,Do you know if Autumn is within reach?,1
+679,Have you observed Eva in the area?,1
+680,"Who's here, within touching distance?",0
+681,Got an idea on the number of folks?,2
+682,"Kai in view, anyone seen?",1
+683,Got an approximate count of humans?,2
+684,Can someone elucidate the individuals present?,0
+685,Have you observed Ella nearby?,1
+686,Any clue on the population within view?,2
+687,"Who's in my bubble, ready for a laugh?",0
+688,Do you know all the people within earshot?,3
+689,"Who's here, ready to engage in some critical thinking?",0
+690,Noticed the number of folks nearby?,2
+691,"Who's in my circle, ready for a chinwag?",0
+692,Who's in?,0
+693,Can you spot anyone you haven't met within shouting distance?,3
+694,"Who's here, amigos?",0
+695,Would you happen to know how many people are in sight?,2
+696,Do you recognize all the faces within sight?,3
+697,Can you identify anyone you haven't met within sight?,3
+698,"Who's in my space, ready to contribute to the dialogue?",0
+699,Can you identify anyone you haven't met within speaking distance?,3
+700,Have you noticed Ethan in sight?,1
+701,Would you happen to know the crowd size here?,2
+702,"Who's around, squad?",0
+703,Any strangers within earshot?,3
+704,Counted the heads nearby?,2
+705,Who's in the crowd?,0
+706,Seen how many folks are within reach?,2
+707,Seen Scarlett around lately?,1
+708,Who's among us at this moment?,0
+709,Have you met everyone in this crowd?,3
+710,Who's in the circle?,0
+711,Noticed the number of individuals present?,2
+712,Can you spot anyone you haven't met within earshot?,3
+713,Any unfamiliar faces within shouting distance?,3
+714,"Kayden nearby, recognized?",1
+715,Can you roughly count the number of individuals around?,2
+716,Have you met everyone within earshot?,3
+717,"Who's here, up for a bit of banter?",0
+718,"Adeline within view, spotted?",1
+719,Can you spot anyone you haven't met within sight?,3
+720,Visible companions?,0
+721,Caleb anywhere here?,1
+722,"Who's standing by, ready to participate?",0
+723,Noticed the number of people?,2
+724,Can you confirm if Gabriella is within sight?,1
+725,Do you have any inkling of the number of individuals around?,2
+726,"Who's nearby, ready to share some amusing anecdotes?",0
+727,Have you acquainted yourself with all the folks present?,3
+728,Any idea how many people are around?,2
+729,"Eliana within sight, anyone noticed?",1
+730,Are you able to locate Daisy?,1
+731,Do you spot  nearby?,1
+732,"Riley within sight, anyone seen?",1
+733,Do you perceive a large number of individuals here?,2
+734,Any unfamiliar faces within earshot?,3
+735,Any idea if Delilah is nearby?,1
+736,Can you tell me the approximate number of individuals here?,2
+737,Noted presence?,0
+738,"Who's around, up for a chat?",0
+739,Can you roughly calculate the crowd size here?,2
+740,"Who's in my space, ready for a good time?",0
+741,Do you recognize all the faces within earshot?,3
+742,Are you able to see Penelope in the area?,1
+743,Who's sharing this moment with us?,0
+744,Can you estimate the number of individuals around?,2
+745,Have you noticed Adeline in the vicinity?,1
+746,Noticed the number of humans in the vicinity?,2
+747,"Who's here, guys?",0
+748,Have you observed David around?,1
+749,Are there any unknown individuals within earshot?,3
+750,Have you spotted Delilah in sight?,1
+751,"Everly nearby, spotted by anyone?",1
+752,"Who's close, ready to shoot the breeze?",0
+753,"Who's in my vicinity, ready to engage in some deep discussion?",0
+754,"Luna within sight, anyone observed?",1
+755,Can anyone indicate the individuals nearby?,0
+756,Can anyone provide information about those present?,0
+757,"Who's nearby, ready to join in on the exchange?",0
+758,Seen how many folks are here?,2
+759,Have you observed Abigail in the room?,1
+760,"Delilah nearby, identified?",1
+761,Got an approximate count present?,2
+762,"Who's here, team?",0
+763,Who's there?,0
+764,Do you notice Jasper within reach?,1
+765,Do you recognize all the faces within speaking distance?,3
+766,Can you spot anyone you haven't met nearby?,3
+767,Any idea on the headcount?,2
+768,Any unfamiliar faces present?,3
+769,"Who's in the room, ready to share their thoughts?",0
+770,Who's nearby at this time?,0
+771,Seen how many individuals are accounted for?,2
+772,"Who's in the room, ready to share their knowledge?",0
+773,Got an approximate count?,2
+774,Are there any unfamiliar faces within earshot?,3
+775,Are there any unfamiliar faces nearby?,3
+776,Do you have any idea of the crowd size in this area?,2
+777,Do you know all the people within view?,3
+778,Any strangers in this area?,3
+779,Can you spot anyone you haven't met in sight?,3
+780,Any reports on Ayla's presence close by?,1
+781,Seen how many folks are present?,2
+782,Would you happen to know the number of people nearby?,2
+783,Have you spotted Mia within reach?,1
+784,"Mila in view, anyone spotted?",1
+785,"Who's here, guys and gals?",0
+786,"Amari nearby, identified by anyone?",1
+787,"Who's here, ready for a chat and a laugh?",0
+788,"Who's here, sharing the moment?",0
+789,Have you seen Josie around?,1
+790,Can you give me a ballpark figure of the individuals nearby?,2
+791,Who's close enough to hear?,0
+792,"Who's in my vicinity, ready to join in?",0
+793,Do you have eyes on Caleb?,1
+794,Are there any unfamiliar faces within speaking distance?,3
+795,Are there any unfamiliar faces within shouting distance?,3
+796,Are there any unknown individuals in this gathering?,3
+797,Could you tally up the number of individuals here?,2
+798,Nearby company?,0
+799,Delilah within sight?,1
+800,"Who's within earshot, ready to contribute?",0
+801,Can you provide an estimation of the people in this space?,2
+802,Can you give me a rough idea of the number of people present?,2
+803,Can you give me a rough headcount of the folks nearby?,2
+804,"Who's here, ready to chime in with their thoughts?",0
+805,Can you give me a ballpark figure of the crowd size here?,2
+806,Are there any unfamiliar faces within view?,3
+807,"Who's in the room, chilling?",0
+808,Any confirmation on Emery being present?,1
+809,"Who's here, waiting to converse?",0
+810,"Who's nearby, ready to share?",0
+811,Noticed the number of humans present?,2
+812,Any confirmation on Aaliyah's presence nearby?,1
+813,Anyone hereabouts?,0
+814,Recognizable figures?,0
+815,Any unfamiliar faces within conversational distance?,3
+816,Any clue on the population here?,2
+817,Any sense of the crowd size around?,2
+818,Who's around?,0
+819,Do you recognize all the faces within shouting distance?,3
+820,Got an approximate count nearby?,2
+821,Can you identify Aaliyah nearby?,1
+822,Are there any unknown individuals within earshot?,3
+823,Any clue on the number of folks?,2
+824,Counted the heads present?,2
+825,Any acknowledgment of Amari within sight?,1
+826,Noticed the number of humans in sight?,2
+827,"Who's nearby, ready to join in on the intellectual conversation?",0
+828,Are there any unknown individuals around?,3
+829,"Alexander around, anyone seen?",1
+830,Do you know all the people within hearing distance?,3
+831,Can you spot anyone you haven't met within speaking distance?,3
+832,"Who's here, ready to add their voice to the conversation?",0
+833,"Who's right here, ready to talk?",0
+834,Are there any unknown individuals in this vicinity?,3
+835,Got an idea on the headcount present?,2
+836,"Aubrey nearby, anyone recognized?",1
+837,Any unfamiliar faces in sight?,3
