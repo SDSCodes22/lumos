@@ -1,8 +1,12 @@
 import os
 from os.path import join, dirname
 import json
-from xml.dom.expatbuilder import theDOMImplementation
 import cv2
+from typing import Callable
+from multiprocessing import Pool, cpu_count
+from numpy import ndarray
+from sentence_transformers import SentenceTransformer, util  # type: ignore -- REASON: Pylance doesn't detect sentence_transformers
+from loguru import logger as log
 
 # -------------------------------------------------------
 # |               IMPORTANT NOTICE                        |
@@ -36,3 +40,36 @@ class VQATester:
             temp = json.load(questions)
             self.questions = temp["questions"]
         self.num_questions = len(self.questions)
+
+        self.model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+
+    def _test_worker(
+        self, model_predict_function: Callable[[ndarray, str], str], question: dict
+    ) -> float:
+        # Get the image
+        img_id = f"{question['image_id']:012}"
+        img_path = join(dirname(__file__), "train2014", f"COCO_train2014_{img_id}.jpg")
+        try:
+            img = cv2.imread(img_path)
+        except:
+            log.warning(
+                f"Image doesn't exist.\t ID: {img_id}, Path searched: {img_path}. Worker cancelling"
+            )
+            return 0.0
+
+        # Feed into the model
+        prediction: str = model_predict_function(img, question["question"])
+
+        # Compute similarity scores
+        embedding_pred = self.model.encode(prediction, convert_to_tensor=True)
+        embedding_true = self.model.encode(question["question"], convert_to_tensor=True)
+        similarity = util.pytorch_cos_sim(embedding_pred, embedding_true)
+
+        return similarity.item()
+
+    def test(
+        self,
+        model_predict_function: Callable[[ndarray, str], str],
+        percent_to_use: int = 50,
+    ):
+        pass
