@@ -60,7 +60,7 @@ with open("faster_whisper_speed_test_results.txt", "w") as f:
     for key, value in DEVICE_INFO.items():
         f.write(f"{key}: {value}\n")
     f.write("\nAudio Length (s) | Transcription Time (s)\n")
-    f.write("-" * 30 + "\n")
+    f.write("-" * 30 + "\n") # type: ignore
     for length, transcription_time in results:
         f.write(f"{length:<16} | {transcription_time:.2f}\n")
 

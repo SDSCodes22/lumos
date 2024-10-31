@@ -1,0 +1,12 @@
+Device Info:
+device_name: SwapnilPahariTheBest
+device_type: Windows
+device_architecture: AMD64
+
+Audio Length (s) | Transcription Time (s)
+------------------------------
+10               | 0.89
+30               | 0.95
+60               | 0.81
+120              | 0.78
+300              | 1.05
