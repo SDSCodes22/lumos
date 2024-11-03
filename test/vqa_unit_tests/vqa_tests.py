@@ -3,7 +3,8 @@
 # |   These tests will not work without downloading the   |
 # |   VQA train2014 dataset. Download this from the       |
 # |   VQA v2 website and unzip the file in this directory |
-# |   leaving a folder named `train2014`                  |
+# |   leaving a folder named `train2014`. You must also   |
+# |   download the train2017 annotations.
 # |                                                       |
 # |   This folder should not be touched.                  |
 # |   This code WILL NOT WORK without this being added    |
@@ -15,10 +16,16 @@ import json
 import cv2
 from typing import Callable
 from numpy import ndarray
-from tqdm import tqdm
+from tqdm import tqdm  # type: ignore I DO EXIST
 from sentence_transformers import SentenceTransformer, util  # type: ignore
-from loguru import logger as log
+from loguru import logger as log  # type: ignore pylance no like modules fr
 import sys
+from collections import defaultdict
+
+# IMPORT YOUR MODEL HERE
+from blip import BlipTest  # type: ignore
+
+log.debug("Finished all imports!")
 
 
 class VQATester:
@@ -28,7 +35,8 @@ class VQATester:
         Raises:
             ImportError: If the directory `/train2014` is not found.
         """
-
+        self.question_types = defaultdict(list)
+        self.answer_types = {"yes/no": [], "number": [], "other": []}
         # Load the questions
         if not os.path.exists(join(dirname(__file__), "train2014")):
             raise ImportError(
@@ -36,11 +44,16 @@ class VQATester:
             )
 
         questions_path = join(dirname(__file__), "questions.json")
+        answers_path: str = join(dirname(__file__), "answers.json")
+        log.debug("Loading Questions...")
         with open(questions_path, "r") as questions:
             temp = json.load(questions)
             self.questions = temp["questions"]
         self.num_questions = len(self.questions)
-
+        log.debug("Loading Answers...")
+        with open(answers_path, "r") as answers:
+            temp = json.load(answers)
+            self.answers = temp["annotations"]
         self.model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
         log.debug("VQATester class initialization complete.")
 
@@ -72,12 +85,49 @@ class VQATester:
 
         # Feed into the model
         prediction: str = model_predict_function(img, question["question"])
+        # Get the true answer
+        question_id = question["question_id"]
+        true_ans, question_type, answer_type = self.get_answer(int(question_id))  # type: ignore Trust
 
         # Compute similarity scores
         embedding_pred = self.model.encode(prediction, convert_to_tensor=True)
-        embedding_true = self.model.encode(question["question"], convert_to_tensor=True)
+        embedding_true = self.model.encode(true_ans, convert_to_tensor=True)
         similarity = util.pytorch_cos_sim(embedding_pred, embedding_true)
+
+        self.answer_types[answer_type].append(similarity.item())
+        self.question_types[question_type].append(similarity.item())
+
+        print(f"Q: {question['question']}, True: {true_ans}, Pred: {prediction}")
         return similarity.item()
+
+    def get_answer(self, question_id: int):
+        """Use binary search to search for a particular answer in the VQA v2 dataset, given the question ID
+
+        Args:
+            question_id (int): Question ID
+
+        Returns:
+            tuple : (Answer to question [str], Question Type [str], Answer Type [str])
+        """
+        # Return the answer, the question type, and the answer type
+        # Do a binary search
+        left = 0
+        right = len(self.answers) - 1
+        while left <= right:
+            if self.answers[left]["question_id"] == question_id:
+                return (
+                    self.answers[left]["answers"][0]["answer"],
+                    self.answers[left]["question_type"],
+                    self.answers[left]["answer_type"],
+                )
+            elif self.answers[right]["question_id"] == question_id:
+                return (
+                    self.answers[right]["answers"][0]["answer"],
+                    self.answers[right]["question_type"],
+                    self.answers[right]["answer_type"],
+                )
+            left += 1
+            right -= 1
 
     def center_text(self, text):
         # Get the current terminal width
@@ -93,7 +143,7 @@ class VQATester:
     def test(
         self,
         model_predict_function: Callable[[ndarray, str], str],
-        percent_to_use: int = 10,
+        percent_to_use: float = 10,
         num_processes=None,
     ) -> float:
         """Function to test a model's accuracy on the VQA v2 Dataset. Provides interactive usage
@@ -109,17 +159,39 @@ class VQATester:
         num_questions = int((percent_to_use / 100) * self.num_questions)
 
         results = []
+        loop_obj = tqdm(range(num_questions), desc="Test Progress")
         # Use TQDM for an appealing, and informative progress bar
-        for i in tqdm(range(num_questions), desc="Test Progress"):
+        for i in loop_obj:
             x = self._test_worker(model_predict_function, self.questions[i])
             results.append(x)
+            if i % 10 == 0 and i != 0:
+                print(
+                    self.center_text(
+                        f"Current mean similarity score: {sum(results) / len(results)}"
+                    )
+                )
 
         print(
             self.center_text(
                 f"\n\n\nDone!\nMean Similarity Score: {sum(results) / len(results):.5f}\nAs Percentage: {sum(results) / len(results) * 100:.2f}%\n\n\n"
             )
         )
-
+        print(
+            self.center_text(
+                "Question Types:\n"
+                + "\n".join(
+                    [f"{k}: {sum(v)/len(v)}" for k, v in self.question_types.items()]
+                )
+            )
+        )
+        print(
+            self.center_text(
+                "Answer Types:\n"
+                + "\n".join(
+                    [f"{k}: {sum(v)/len(v)}" for k, v in self.answer_types.items()]
+                )
+            )
+        )
         return sum(results) / len(results)
 
 
@@ -132,4 +204,5 @@ if __name__ == "__main__":
 
     # ? Example Usage
     tester = VQATester()
-    tester.test(dummy_model_predict_function, 1)
+    test_class = BlipTest()
+    tester.test(test_class.test_blip, 0.1)

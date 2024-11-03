@@ -1,6 +1,6 @@
-/src/test/vqa_unit_tests/train2014/
-/src/test/vqa_unit_tests/train2014.zip
-
+/test/vqa_unit_tests/train2014/
+/test/vqa_unit_tests/train2014.zip
+answers.json
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
